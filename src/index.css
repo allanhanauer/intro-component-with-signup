@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  /*Primary*/
+  --clr-Red: hsl(0, 100%, 74%);
+  --clr-Green: hsl(154, 59%, 51%);
+  /*Accent*/
+  --clr-Blue: hsl(248, 32%, 49%);
+  /*Neutral*/
+  --clr-Dark-Blue: hsl(249, 10%, 26%);
+  --clr-Grayish-Blue: hsl(246, 25%, 77%);
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5rem;
+  font-family: "Poppins";
+}
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url(./assets/bg-intro-mobile.png) var(--clr-Red);
+}
+@media (max-width: 800px) {
+  body,.root,html{
+    height: 1110px;
+    width: 100dvw;
+  }
+  main{
+    flex-direction: column;
+    height: 1110px;
+    width: 80%;
+  }
+  main .desc{
+    width: 300px;
+  }
+  main .form-box{
+    width: 300px;
+  }
+  main .form-box .promo{
+    text-align: center;
+  }
+}

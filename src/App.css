@@ -1,0 +1,149 @@
+:root {
+  /*Primary*/
+  --clr-Red: hsl(0, 100%, 74%);
+  --clr-Green: hsl(154, 59%, 51%);
+  /*Accent*/
+  --clr-Blue: hsl(248, 32%, 49%);
+  /*Neutral*/
+  --clr-Dark-Blue: hsl(249, 10%, 26%);
+  --clr-Grayish-Blue: hsl(246, 25%, 77%);
+}
+main {
+  display: flex;
+  margin-top: 24px;
+  gap: 75px;
+  height: 564px;
+}
+main .desc {
+  display: flex;
+  color: white;
+  width: 500px;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
+}
+main .desc #title {
+  font-size: 49px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 55px;
+}
+main .desc #desc-info {
+  font-size: 16.1px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+main .form-box {
+  display: flex;
+  gap: 25px;
+  width: 532px;
+  flex-direction: column;
+}
+main .form-box .promo {
+  display: flex;
+  background-color: var(--clr-Blue);
+  box-shadow: 0px 8px 1px hsla(249, 10%, 26%, 0.3);
+  color: white;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  width: 100%;
+  height: 60px;
+}
+main .form-box .promo #text-promo {
+  font-size: 15.37px;
+  line-height: normal;
+}
+main .form-box .promo #text-promo > span {
+  font-size: 15.37px;
+  font-weight: 600;
+}
+main .form-box .form {
+  display: flex;
+  border-radius: 8px;
+  padding: 40px 40px 45px 40px;
+  background-color: white;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+}
+main .form-box .form form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .form-box .form .inp {
+  width: 100%;
+  height: 56px;
+  font-size: 14.5px;
+  font-weight: 500;
+  padding-left: 20px;
+  border-radius: 6px;
+  border: 1px solid var(--clr-Grayish-Blue);
+}
+main .form-box .form .inp::placeholder {
+  font-size: 14.5px;
+  font-weight: 500;
+}
+main .form-box .form .label-inp {
+  display: flex;
+  flex-direction: column;
+}
+.activate.label-inp::after {
+  content: "";
+  color: var(--clr-Red);
+  align-self: flex-end;
+  font-size: 11px;
+  width: 158px;
+  height: 20px;
+}
+.activate#fform::after {
+  content: "First Name cannot be empty";
+}
+.activate#lform::after {
+  content: "Last Name cannot be empty";
+}
+.activate#eform::after {
+  content: "Looks like this is not an email";
+}
+.activate#pform::after {
+  content: "Password cannot be empty";
+}
+
+main .form-box .form .submit-button {
+  background-color: var(--clr-Green);
+  color: white;
+  box-shadow: 0px 4px 1px hsla(154, 20%, 51%, 0.7);
+  height: 54px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16.6px;
+  font-style: normal;
+  line-height: normal;
+  cursor: pointer;
+  transition: 0.5s;
+}
+main .form-box .form .submit-button:hover {
+  background-color: rgb(105, 219, 170);
+}
+
+main .form-box .form #terms {
+  font-size: 11px;
+  color: var(--clr-Grayish-Blue);
+  text-align: center;
+}
+main .form-box .form #terms > span {
+  color: var(--clr-Red);
+}
+.attribution {
+  color: white;
+  font-size: 11px;
+}
+.attribution a {
+  color: var(--clr-Dark-Blue);
+  text-decoration: none;
+}
